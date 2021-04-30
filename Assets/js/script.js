@@ -2,10 +2,12 @@
 var generateBtn = document.querySelector("#generate");
 var psword = [];
 var letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-var symbols = [' ', '!', '"', '#', '$', '%', '&',"'", '('];
+var symbols = [' ', '!', '"', '#', '$', '%', '&',"'", '(', ')', '*', '+', ",", '-', '.', ':', ';', '<', '=', '>','?', '@',
+                '[', "]", '^','_', '`', '{', '|', '}', '~'];
 
 function generatePassword(pswdLength) { 
   
+
   var useNumber = window.confirm("Would you like to use digits 0-9?");
   var useLower = window.confirm("Would you like to use lowercase letters a - z?");
   var useUpper = window.confirm("Would you like to use uppercase letters A - Z?");
